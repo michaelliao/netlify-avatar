@@ -1,2 +1,3 @@
 # netlify-avatar
-Generate github-like avatar by netlify functions.
+
+Generate GitHub-like avatar by netlify functions.
