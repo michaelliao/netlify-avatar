@@ -7,6 +7,17 @@
 <body>
     <h3>Netlify Avatar</h3>
     <p>Generate avatar on-the-fly using netlify functions.</p>
+    <p>Examples:</p>
+    <script>
+        let
+            url = location.protocol + '//' + location.host + '/.netlify/functions/avatar?name=',
+            r = '0x' + Math.floor(Math.random() * 1000000),
+            names = ['bob', 'alice', r];
+        for (let name of names) {
+            document.write('<p><a href="' + url + name + '">' + url + name + '</a><br>');
+            document.write('<img src="' + url + name + '" style="width:100px;height:100px"></p>');
+        }
+    </script>
 </body>
 
 </html>
