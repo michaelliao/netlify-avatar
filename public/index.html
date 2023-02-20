@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <h3>Netlify Avatar</h3>
+    <h1>Netlify Avatar</h1>
     <p>Generate avatar on-the-fly using netlify functions.</p>
     <p>Examples:</p>
     <script>
@@ -18,6 +18,10 @@
             document.write('<img src="' + url + name + '" style="width:100px;height:100px"></p>');
         }
     </script>
+    <h1>Env Config</h1>
+    <p>WHITE_LIST: domain list sperated by ','. e.g. 'localhost,www.liaoxuefeng.com'. default to empty ('').
+        '*.example.com' is not supported yet.</p>
+    <p>MAX_AGE: max age for generated image, default to '3600'.</p>
 </body>
 
 </html>

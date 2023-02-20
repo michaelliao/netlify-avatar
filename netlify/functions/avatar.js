@@ -1,6 +1,6 @@
 import { identicon } from 'minidenticons';
 
-const WHITE_LIST = process.env.WHITE_LIST || 'localhost:8888';
+const WHITE_LIST = process.env.WHITE_LIST || '';
 const MAX_AGE = process.env.MAX_AGE || '3600';
 
 exports.handler = async function (event, context) {
